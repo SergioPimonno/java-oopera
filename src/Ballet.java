@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+import java.util.ArrayList;
 
-public class Ballet {
+public class Ballet extends MusicalShow{
+    private String choreographer;
+
+    public Ballet(String title, double duration, Director director,
+                  ArrayList<Actor> listOfActors, String musicAuthor, String choreographer, String librettoText) {
+        super(title, duration, director, listOfActors, musicAuthor, librettoText);
+        this.choreographer = choreographer;
+    }
+
 }
